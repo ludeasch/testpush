@@ -25,8 +25,8 @@ const applicationServerPublicKey = 'BAeJxN0Dn-o_aC1MCaNfxIKkA9MVpOnm9vN-aBx3NltO
 
 const pushButton = document.querySelector('.js-push-btn');
 
-let isSubscribed = false;
-let swRegistration = null;
+var isSubscribed = false;
+var swRegistration = null;
 
 function urlB64ToUint8Array(base64String) {
   const padding = '='.repeat((4 - base64String.length % 4) % 4);
