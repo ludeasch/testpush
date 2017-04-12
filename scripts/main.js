@@ -111,6 +111,7 @@ function initialiseUI() {
   .then(function(subscription) {
     isSubscribed = !(subscription === null);
 
+    console.log(subscription)
     updateSubscriptionOnServer(subscription);
 
     if (isSubscribed) {
