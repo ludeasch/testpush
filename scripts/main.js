@@ -78,8 +78,7 @@ function updateSubscriptionOnServer(subscription) {
 function subscribeUser() {
   const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
   swRegistration.pushManager.subscribe({
-    userVisibleOnly: true,
-    applicationServerKey: applicationServerKey
+    userVisibleOnly: true
   })
   .then(function(subscription) {
     console.log('User is subscribed');
