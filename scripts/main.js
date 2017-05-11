@@ -21,7 +21,7 @@
 
 'use strict';
 
-const applicationServerPublicKey = 'TWcwZER0c3VkakYvUUNVS1J0MTE4eXVFSnlpRVdXa1ZoSllGZ0E3ekVFWVhxcG5hdEFidGt3UFNIRWtzRE03cTZ2VW1nOTMxb2NobVxuMndoRkdwZklRZz09';
+const applicationServerPublicKey = '5YAinDWJK91QBFwBRMSl6wXNzelK-MvdoRfE5jEKP8mGrzeOu9JzEtf0bJtibrmFCygivfDDkvdAMj3tIrOWDA==';
 
 const pushButton = document.querySelector('.js-push-btn');
 
@@ -76,7 +76,7 @@ function updateSubscriptionOnServer(subscription) {
 }
 
 function subscribeUser() {
-  const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
+  const applicationServerKey = applicationServerPublicKey;
   swRegistration.pushManager.subscribe({
     userVisibleOnly: true,
     applicationServerKey: applicationServerKey
