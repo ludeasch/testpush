@@ -51,12 +51,11 @@ self.addEventListener('fetch', function(event) {
 
 
 self.addEventListener('install', function(event) {
-console.log("etroooooo")
   event.waitUntil(
     caches.open('example-cache').then(function(cache) {
       return cache.addAll(
         [
-          '/images/e3.avi',
+          'fallout.mp3',
         ]
       );
     })
