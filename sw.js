@@ -55,7 +55,7 @@ self.addEventListener('install', function(event) {
     caches.open('example-cache').then(function(cache) {
       return cache.addAll(
         [
-          'fallout.mp3',
+          'fallout.mp4',
         ]
       );
     })
