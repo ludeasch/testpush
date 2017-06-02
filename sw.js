@@ -48,7 +48,7 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
-document.querySelector('.cache-article').addEventListener('click', function(event) {
+self.addEventListener('click', function(event) {
   event.preventDefault();
   debugger;
   var id = this.dataset.articleId;
@@ -62,18 +62,7 @@ document.querySelector('.cache-article').addEventListener('click', function(even
     });
   });
 });
-document.querySelector('.cache-article').addEventListener('click', function(event) {
-  event.preventDefault();
-  event.waitUntil(
-    caches.open('.cache-article').then(function(cache) {
-      return cache.addAll(
-        [
-          'fallout.mp4',
-        ]
-      );
-    })
-  );
-});
+
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('example-cache').then(function(cache) {
