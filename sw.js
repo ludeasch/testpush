@@ -78,9 +78,9 @@ self.addEventListener('activate', function(event) {
             return caches.delete(cacheName);
           }
         })
-        );
+      );
     })
-    );
+  );
 });
 
 self.addEventListener('fetch', function(event) {
