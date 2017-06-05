@@ -44,7 +44,7 @@ self.addEventListener('install', function(event) {
   var urlsToPrefetch = [
     './',
     'sw.js',
-    'fallout.mp4'
+    'https://s3.amazonaws.com/blink-webinars-video/03274271-e39f-4513-a1b8-f84287d97041/src/wildlife_3840x2160_60fps.webm'
   ];
 
   // All of these logging statements should be visible via the "Inspect" interface
