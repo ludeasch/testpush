@@ -45,7 +45,7 @@ self.addEventListener('install', function(event) {
     './',
     'sw.js',
     // The videos are stored remotely with CORS enabled.
-    'https://s3.amazonaws.com/blink-webinars-video/03274271-e39f-4513-a1b8-f84287d97041/src/wildlife_3840x2160_60fps.webm',
+    'https://www.youtube.com/watch?v=-No-226O0tg',
   ];
 
   // All of these logging statements should be visible via the "Inspect" interface
@@ -111,7 +111,7 @@ self.addEventListener('fetch', function(event) {
             status: 206,
             statusText: 'Partial Content',
             headers: [
-              ['Content-Type', 'video/webm'],
+              //['Content-Type', 'video/webm'],
               ['Content-Range', 'bytes ' + pos + '-' +
                 (ab.byteLength - 1) + '/' + ab.byteLength]]
           });
