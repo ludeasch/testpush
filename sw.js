@@ -45,7 +45,7 @@ self.addEventListener('install', function(event) {
     './',
     'sw.js',
     // The videos are stored remotely with CORS enabled.
-    'https://www.youtube.com/embed/EP4xY7LTwu0',
+    'http://techslides.com/demos/sample-videos/small.webm',
   ];
 
   // All of these logging statements should be visible via the "Inspect" interface
