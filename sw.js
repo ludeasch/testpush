@@ -89,6 +89,12 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
   console.log('Handling fetch event for', event.request.url);
+    if(navigator.onLine){
+    alert('online');
+   } else {
+    alert('offline');
+   }
+
   if (event.request.headers.get('range')) {
     var pos =
     Number(/^bytes\=(\d+)\-$/g.exec(event.request.headers.get('range'))[1]);
@@ -113,7 +119,7 @@ self.addEventListener('fetch', function(event) {
             status: 206,
             statusText: 'Partial Content',
             headers: [
-              //['Content-Type', 'video/webm'],
+              ['Content-Type', 'video/mp4'],
               ['Content-Range', 'bytes ' + pos + '-' +
                 (ab.byteLength - 1) + '/' + ab.byteLength]]
           });
