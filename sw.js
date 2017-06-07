@@ -48,7 +48,7 @@ self.addEventListener('install', function(event) {
     'index.html',
     'styles/index.css',
     // The videos are stored remotely with CORS enabled.
-    'http://techslides.com/demos/sample-videos/small.mp4',
+    'http://www.html5videoplayer.net/videos/toystory.mp4',
   ];
 
   // All of these logging statements should be visible via the "Inspect" interface
