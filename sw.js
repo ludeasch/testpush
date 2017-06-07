@@ -48,7 +48,8 @@ self.addEventListener('install', function(event) {
     'index.html',
     'styles/index.css',
     // The videos are stored remotely with CORS enabled.
-    'https://www.w3schools.com/html/mov_bbb.mp4',
+    'https://www.youtube.com/embed/YmSVji6uzzw',
+    'https://www.youtube.com/embed/_SfH58OWBiw',
   ];
 
   // All of these logging statements should be visible via the "Inspect" interface
@@ -114,7 +115,7 @@ self.addEventListener('fetch', function(event) {
             status: 206,
             statusText: 'Partial Content',
             headers: [
-              ['Content-Type', 'video/webm'],
+              //['Content-Type', 'video/webm'],
               ['Content-Range', 'bytes ' + pos + '-' +
                 (ab.byteLength - 1) + '/' + ab.byteLength]]
           });
