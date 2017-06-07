@@ -48,7 +48,7 @@ self.addEventListener('install', function(event) {
     'index.html',
     'styles/index.css',
     // The videos are stored remotely with CORS enabled.
-    'https://media.w3.org/2010/05/sintel/trailer.mp4',
+    'fallout.mp4',
   ];
 
   // All of these logging statements should be visible via the "Inspect" interface
