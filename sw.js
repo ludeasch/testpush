@@ -69,9 +69,7 @@ self.addEventListener('activate', function(event) {
     caches.keys().then(function(CURRENT_CACHES) {
       return Promise.all(
         CURRENT_CACHES.filter(function(cacheName) {
-           if (expectedCacheNames.indexOf(cacheName) === -1) {
-            // If this cache name isn't present in the array of "expected" cache names, then delete it.
-            console.log('Deleting out of date cache:', cacheName);
+
         }).map(function(cacheName) {
           return caches.delete(cacheName);
         })
