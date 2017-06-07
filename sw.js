@@ -44,6 +44,9 @@ self.addEventListener('install', function(event) {
   var urlsToPrefetch = [
     './',
     'sw.js',
+    'scripts/main.js',
+    'index.html',
+    'styles/index.css',
     // The videos are stored remotely with CORS enabled.
     'https://www.w3schools.com/html/mov_bbb.mp4',
   ];
