@@ -79,6 +79,11 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
+  if(navigator.onLine){
+  alert('online');
+ } else {
+  alert('offline');
+ }
   event.respondWith(
     caches.open(CURRENT_CACHES).then(function(cache) {
       return cache.match(event.request).then(function (response) {
