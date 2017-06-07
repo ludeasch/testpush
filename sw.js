@@ -80,9 +80,9 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
   if(navigator.onLine){
-  alert('online');
+  console.log('online');
  } else {
-  alert('offline');
+  console.log('offline');
  }
   event.respondWith(
     caches.open(CURRENT_CACHES).then(function(cache) {
