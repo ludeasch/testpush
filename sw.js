@@ -89,6 +89,11 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
   console.log('Handling fetch event for', event.request.url);
+    if(navigator.onLine){
+    alert('online');
+   } else {
+    alert('offline');
+   }
 
   if (event.request.headers.get('range')) {
     var pos =
