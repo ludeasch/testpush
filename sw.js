@@ -48,7 +48,7 @@ self.addEventListener('install', function(event) {
     'index.html',
     'styles/index.css',
     // The videos are stored remotely with CORS enabled.
-    'https://s3.amazonaws.com/blink-webinars-video/03274271-e39f-4513-a1b8-f84287d97041/src/wildlife_3840x2160_60fps.webm',
+    'http://techslides.com/demos/sample-videos/small.mp4',
   ];
 
   // All of these logging statements should be visible via the "Inspect" interface
